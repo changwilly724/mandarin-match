@@ -20,6 +20,7 @@
     <button class="icon-btn" id="howBtn" aria-label="How to play" title="How to play">?</button>
   </header>
 
+  <nav aria-label="Puzzle games" style="display:flex;gap:8px;margin:0 0 12px"><span style="flex:1;text-align:center;padding:10px;border-radius:10px;background:#207e68;color:white;font-weight:700;font-size:13px">Mandarin Match</span><a href="./sentence.html" style="flex:1;text-align:center;padding:10px;border-radius:10px;border:1px solid #bfd5c9;color:#207e68;font-weight:700;font-size:13px;text-decoration:none;background:white">Sentence Builder →</a></nav>
   <div class="mode-tabs" role="tablist" aria-label="Puzzle mode">
     <button id="dailyTab" class="tab active" role="tab" aria-selected="true">☀ Daily challenge</button>
     <button id="freeTab" class="tab" role="tab" aria-selected="false">∞ Endless play</button>
@@ -45,7 +46,7 @@
     <div class="learning-bottom"><span id="masteryText">Learning words as you play</span><button class="link-btn" id="progressBtn">Vocabulary progress ↗</button></div>
     <section class="mode-panel" id="modePanel"><div class="mode-panel-title"><div><b id="panelTitle">Daily challenge</b><p id="panelDesc">Same puzzle for everyone today. Clear eight rows to finish.</p></div><span id="panelPill" class="pill">No timer</span></div><div class="difficulty-wrap hidden" id="difficultyWrap"><label for="difficulty">New rows appear</label><select id="difficulty"><option value="gentle">Gentle · every 4 matches</option><option value="balanced" selected>Balanced · every 3 matches</option><option value="spicy">Challenging · every 2 matches</option></select></div><button id="freshBtn" class="text-button">Start a fresh puzzle →</button></section>
   </main>
-  <footer>Prototype v2 · Pinyin first · No accounts or subscriptions · Progress saved only on this device</footer>
+  <footer>Prototype v3 · Pinyin first · No accounts or subscriptions · Progress saved only on this device</footer>
 </div>
 
 <dialog id="helpDialog" class="dialog"><div class="dialog-heading"><h2>How to play</h2><button class="close-btn" data-close="helpDialog" aria-label="Close">×</button></div><ol class="steps"><li><b>Find a translation.</b> Tap an English word, then the matching Pinyin word. Both tiles disappear.</li><li><b>Clear a whole row.</b> A completely empty horizontal row earns bonus points.</li><li><b>Watch the rising rows.</b> After a few correct matches, a new row enters at the bottom and pushes existing tiles upwards.</li><li><b>Plan your matches.</b> Matching across different rows can leave unfinished rows behind. Stop any tiles reaching past the top!</li><li><b>Learn naturally.</b> Use the word bank or a hint whenever a Mandarin word is unfamiliar. Words return across puzzles.</li></ol><p class="help-note">There are no falling blocks, no path drawing, and no timer. Correct matches drive the rising-row mechanic.</p><button class="primary-btn close-full" data-close="helpDialog">Let's play</button></dialog>
